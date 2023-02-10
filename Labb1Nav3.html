@@ -7,11 +7,41 @@
     <title>Produkter</title>
     <link rel="stylesheet" href="stylesheetLabb1Nav3.css" />
     <script defer src="site.js" defer></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
-  <body>
+  <body style="background-color: #f2f2f2;">
     <div id="produkter"></div>
+    <div class="container">
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" id="pizzaNamn">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p id="pizzaInfo">Some text in the modal.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+      <h2>Kundvagn</h2>
+      <div class="panel panel-default">
+        <div class="panel-body" id="kundvagn">
+        </div>
+      </div>
+      <p id="myAPI"></p>
+      </div>
+    <hr>
     <ul>
-      <li><a href="http://127.0.0.1:5500/Labb1.html">Tillbaka</a></li>
+      <button class="btn btn-default"><a href="http://127.0.0.1:5500/Labb1.html">Tillbaka</a></button>
     </ul>
   </body>
 </html>
